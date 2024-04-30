@@ -12,8 +12,10 @@
 #     {'nome': 'Aline', 'sobrenome': 'Souza'},
 # ]
 # lista = [4, 32, 1, 34, 5, 6, 6, 21, ]
-# lista.sort(reverse=True)
-# sorted(lista)
+# lista.sort()
+# # sorted(lista)
+# print(lista)
+# # print(a)
 lista = [
     {'nome': 'Luiz', 'sobrenome': 'Miranda'},
     {'nome': 'Maria', 'sobrenome': 'Oliveira'},
@@ -22,12 +24,10 @@ lista = [
     {'nome': 'Aline', 'sobrenome': 'Souza'},
 ]
 
-
-def exibir(lista):
+def exibir(item):
     for item in lista:
         print(item)
     print()
-
 
 l1 = sorted(lista, key=lambda item: item['nome'])
 l2 = sorted(lista, key=lambda item: item['sobrenome'])
