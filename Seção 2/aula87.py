@@ -7,7 +7,6 @@ lista = [
 for item in lista:
     if isinstance(item, set):
         print('SET')
-        item.add(5)
         print(item, isinstance(item, set))
 
     elif isinstance(item, str):
@@ -17,6 +16,7 @@ for item in lista:
     elif isinstance(item, (int, float)):
         print('NUM')
         print(item, item * 2)
+
     else:
         print('OUTRO')
         print(item)
